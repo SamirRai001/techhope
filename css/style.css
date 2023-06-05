@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #281A3A;
+    --secondary-color: #013986;
+    --text-primary-color: #53D2F4;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    border-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.4s ease;
+    list-style: none;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+    color: var(--text-primary-color);
+    font-family: 'Orbitron', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a,
+button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#rotate {
+    animation: animName 6s linear infinite;
+}
+
+@keyframes animName {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.whole-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#013986, #281A3A);
+    padding: 10px;
+}
+
+#whole-content {
+    width: 100%;
+    height: 100%;
+    border: solid 1px;
+    position: relative;
+}
+
+#border-decoration {
+    position: absolute;
+    width: 170px;
+}
+
+.border-top-left {
+    left: 0;
+}
+
+.border-top-right {
+    right: 0;
+}
+
+.border-bottom-left {
+    bottom: 0;
+    margin-bottom: -4px;
+}
+
+.border-bottom-right {
+    bottom: 0;
+    right: 0;
+    margin-bottom: -4px;
+}
+
+.top {
+    max-width: 550px;
+    margin: auto;
+    position: relative;
+}
+
+#top-img2 {
+    display: none;
+}
+
+.welcome {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    margin: 0px 80px;
+    width: 100%;
+    max-width: 390px;
+}
+
+.welcome span {
+    font-size: 28px;
+    display: flex;
+}
+
+.welcome marquee {
+    margin: 0px 2px;
+}
+
+.navbar {
+    padding: 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo-div {
+    display: flex;
+}
+
+.logo-animation-1 {
+    width: 90px;
+    position: relative;
+    display: flex;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-btn img {
+    width: 38px;
+}
+
+.logo-animation-2 {
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.logo-text {
+    position: relative;
+    width: 250px;
+    display: flex;
+}
+
+.logo-text-area {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.link-div {
+    display: flex;
+    gap: 10px;
+    float: right;
+}
+
+.link-div li {
+    width: 80px;
+}
+
+.link {
+    position: absolute;
+    color: var(--text-primary-color);
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #border-decoration {
+        width: 120px;
+    }
+
+    .border-top-left,
+    .border-top-right {
+        display: none;
+    }
+
+    #top-img1 {
+        display: none;
+    }
+
+    #top-img2 {
+        display: flex;
+    }
+
+    .welcome {
+        height: 100%;
+        margin: auto;
+        padding: 20px 15%;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .navbar {
+        padding: 10px 10px;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    #whole-content {
+        border-style: none;
+    }
+
+    #border-decoration {
+        display: none;
+    }
+
+    .navbar {
+        padding: 10px 0px;
+    }
+
+    .logo-div {
+        width: 100%;
+    }
+
+    .link-div {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+}
